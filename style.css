@@ -100,3 +100,67 @@ header{
 /* navbar over */
 
 /* header over */
+
+
+
+/* mission */
+.mission{
+    background:#001322;
+}
+
+
+.underline{
+    width: 150px;
+    border-bottom: 2px solid #eee;
+    margin: auto;
+}
+
+
+.fromLeft{
+    animation-name: fromLeft;
+    animation-duration: 3s;
+}
+
+.fromRight{
+    animation-name: fromRight;
+    animation-duration: 3s;
+
+}
+
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes fromRight{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+/* mission Over */
+
+
+/* custom colors */
+.text-color-v1{
+    color:#e25c1ea6;
+}
+.text-color-v2{
+    color:#f7d01fe5;
+}
+.text-color-v3{
+    color:#a21fbdb0;
+}
+/* custom colors over */
