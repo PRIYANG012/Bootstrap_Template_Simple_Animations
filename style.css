@@ -1,0 +1,102 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+
+/* header */
+
+header{
+    height: 100vh;
+    background:linear-gradient(rgb(0,0,0,5.4),rgb(0,0,0,0.6)),url('Images/Banner.jpg') no-repeat center center /cover;
+}
+/* banner */
+.banner{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+.banner-heading{
+    animation-name: animation1;
+    animation-duration: 2s;
+}
+
+.banner-par{
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards
+}
+
+
+@keyframes animation1{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+/* banner over */
+
+
+/* navbar */
+
+.nav-menu-custom{
+
+    background: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.5));
+    padding:30px;
+    transition: all .7s;
+}
+
+.menu-item{
+
+    font: 12px;
+    letter-spacing: 1px;
+    color:#eee;
+    transition: color .5s;
+}
+
+.menu-item:hover{
+    color:#70aed2;
+}
+
+.line1, .line2, .line3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+
+}
+
+
+.change .line1{
+    transform: rotate(-45deg) translate(-5px ,6px);
+}
+
+.change .line2{
+    opacity: 0;
+}
+
+.change .line3{
+    transform: rotate(45deg) translate(-5px ,-6px);
+}
+
+.custom-navbar{
+    padding: 5px 30px;
+    background: linear-gradient(rgb(0,0,0,.6),rgb(0,0,0,.7));
+
+}
+
+.nav-active{
+    color:#70aed2;
+}
+/* navbar over */
+
+/* header over */
